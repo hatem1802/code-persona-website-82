@@ -364,6 +364,9 @@ export const DashboardProjects = () => {
         "https://portfolio-backend-production-6392.up.railway.app/api/projects/image",
         formdata
       );
+      if (projectTextData) {
+        fetchProjects();
+      }
     } catch (error) {
       console.error("Error adding project:", error);
     }
